@@ -172,6 +172,8 @@ body {
     background-position: center;
     opacity: 0.08;
     pointer-events: none;
+    -webkit-mask-image: radial-gradient(circle, transparent 35%, black 70%);
+    mask-image: radial-gradient(circle, transparent 35%, black 70%);
 }
 
 .cover-content {
