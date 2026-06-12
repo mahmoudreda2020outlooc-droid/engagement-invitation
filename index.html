@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دعوة خطوبة أحمد وياسمين - فرحتنا تكتمل بوجودكم</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="نتشرف بدعوتكم لحضور حفل خطوبة أحمد وياسمين. شاركونا فرحة العمر والتفاصيل الكاملة وتأكيد الحضور عبر موقعنا التفاعلي العصري والأنيق.">
+    <meta name="keywords" content="دعوة خطوبة, دعوة إلكترونية, أحمد وياسمين, خطوبة أحمد وياسمين, فرح إلكتروني, دعوة مودرن شيك">
+    
+    <!-- Open Graph (Facebook / WhatsApp sharing) -->
+    <meta property="og:title" content="دعوة خطوبة أحمد وياسمين - فرحتنا تكتمل بوجودكم">
+    <meta property="og:description" content="شاركونا فرحة الخطوبة! تفاصيل الحفل وتأكيد الحضور عبر الرابط.">
+    <meta property="og:image" content="./assets/engagement_rings.png">
+    <meta property="og:type" content="website">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Alex+Brush&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Background Music -->
+    <audio id="bg-music" loop preload="auto">
+        <source src="./assets/bg_music.mp3" type="audio/mp3">
+    </audio>
+
+    <!-- Music Toggle Button -->
+    <button class="music-toggle" id="music-toggle" aria-label="تشغيل/إيقاف الموسيقى">
+        <i class="fas fa-volume-up"></i>
+    </button>
+
+    <!-- Drifting Soft Petals Container -->
+    <div id="petals-container"></div>
+
+    <!-- 1. Sleek Minimalist Cover Overlay (100% Responsive & Chic) -->
+    <div class="cover-overlay" id="cover-screen">
+        <div class="cover-card">
+            <div class="cover-floral-bg"></div>
+            <div class="cover-content">
+                <span class="cover-bismillah">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</span>
+                <h2 class="cover-title-names">Ahmed & Yasmin</h2>
+                <div class="cover-divider-line"></div>
+                <p class="cover-subtitle">دعوة لحضور حفل خطوبة</p>
+                <p class="cover-date">14 . 08 . 2026</p>
+                <button class="btn btn-chic-primary" id="open-btn">
+                    فتح الدعوة <i class="fas fa-envelope-open-text"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content Container (Revealed smoothly) -->
+    <main class="main-content" id="main-content" style="opacity: 0; display: none;">
+        
+        <!-- Header / Hero Section -->
+        <section class="hero-section" id="home">
+            <div class="chic-container">
+                <div class="hero-inner scroll-reveal">
+                    <p class="verse">"وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً..."</p>
+                    
+                    <div class="hero-names-wrapper">
+                        <span class="script-font-decor">A & Y</span>
+                        <h1 class="couple-names-chic">Ahmed & Yasmin</h1>
+                    </div>
+                    
+                    <p class="invitation-text-chic">
+                        يسعدنا أن تشاركونا فرحة انطلاقتنا معاً في دروب الحياة، نتشرف بدعوتكم لحضور حفل خطوبتنا المميّز.
+                    </p>
+                    
+                    <div class="simple-decor-divider">
+                        <span class="line-chic"></span>
+                        <span class="rings-decor"><i class="far fa-heart"></i></span>
+                        <span class="line-chic"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Countdown Section -->
+        <section class="countdown-section">
+            <div class="container">
+                <h2 class="section-title scroll-reveal">العد التنازلي ليوم الخطوبة</h2>
+                <div class="countdown-chic scroll-reveal">
+                    <div class="countdown-card">
+                        <span class="number" id="days">00</span>
+                        <span class="label">يوم</span>
+                    </div>
+                    <div class="countdown-card">
+                        <span class="number" id="hours">00</span>
+                        <span class="label">ساعة</span>
+                    </div>
+                    <div class="countdown-card">
+                        <span class="number" id="minutes">00</span>
+                        <span class="label">دقيقة</span>
+                    </div>
+                    <div class="countdown-card">
+                        <span class="number" id="seconds">00</span>
+                        <span class="label">ثانية</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bride & Groom Info (Sleek Grid) -->
+        <section class="couple-section">
+            <div class="container">
+                <div class="couple-grid">
+                    <div class="couple-card-chic groom scroll-reveal">
+                        <div class="card-img-container">
+                            <img src="./assets/engagement_rings.png" alt="صورة تعبيرية للخطيب" class="card-img">
+                        </div>
+                        <div class="card-info-chic">
+                            <h3 class="card-name-chic">Ahmed</h3>
+                            <p class="card-title-chic">الخطيب</p>
+                            <p class="card-quote-chic">"اللهم اجعل حياتنا سكناً ومودة ورحمة واجمع بيننا بالخير"</p>
+                        </div>
+                    </div>
+
+                    <div class="couple-card-chic bride scroll-reveal">
+                        <div class="card-img-container">
+                            <img src="./assets/bride_bouquet.png" alt="صورة تعبيرية للخطيبة" class="card-img">
+                        </div>
+                        <div class="card-info-chic">
+                            <h3 class="card-name-chic">Yasmin</h3>
+                            <p class="card-title-chic">الخطيبة</p>
+                            <p class="card-quote-chic">"ربي ارزقنا حياة مليئة بالسعادة والسلام والتوفيق المشترك"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Event Details (Date & Venue) -->
+        <section class="details-section" id="details">
+            <div class="container">
+                <h2 class="section-title scroll-reveal">تفاصيل حفل الخطوبة</h2>
+                
+                <div class="details-chic-grid">
+                    <!-- Date Card -->
+                    <div class="details-chic-card scroll-reveal">
+                        <div class="card-icon-chic"><i class="far fa-clock"></i></div>
+                        <h3>الزمان والموعد</h3>
+                        <p class="card-date-chic">الجمعة، 14 أغسطس 2026</p>
+                        <p class="card-time-chic">يبدأ الاحتفال في تمام الساعة 6:00 مساءً</p>
+                        <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=%D8%AD%D9%81%D9%84+%D8%AE%D8%B7%D9%88%D8%A8%D8%A9+%D8%A3%D8%AD%D9%85%D8%AF+%D9%88%D9%8A%D8%A3%D8%B3%D9%85%D9%8A%D9%86&dates=20260814T150000Z/20260814T210000Z&details=%D9%86%D8%AA%D8%B4%D8%B1%D9%81+%D8%A8%D8%AD%D8%B6%D9%88%D8%B1%D9%83%D9%85+%D9%84%D8%AD%D9%81%D9%84+%D8%AE%D8%B7%D9%88%D8%A8%D8%AA%D9%86%D8%A7&location=%D9%82%D8%A7%D8%B9%D8%A9+%D8%A7%D9%84%D9%83%D8%A7%D9%85%D9%8A%D9%84%D9%8A%D8%A7%D9%8    %D8%A7%D9%84%D8%A5%D8%B3%D9%83%D9%86%D8%AF%D8%B1%D9%8A%D8%A9" target="_blank" class="btn btn-chic-outline">
+                            <i class="far fa-calendar-plus"></i> حفظ الموعد في تقويمك
+                        </a>
+                    </div>
+                    
+                    <!-- Venue Card -->
+                    <div class="details-chic-card scroll-reveal">
+                        <div class="card-icon-chic"><i class="fas fa-map-pin"></i></div>
+                        <h3>المكان والقاعة</h3>
+                        <p class="card-date-chic">قاعة الكاميليا للمناسبات</p>
+                        <p class="card-time-chic">الأسكندرية</p>
+                        <a href="https://www.google.com/maps/?q=31.230694,29.943889" target="_blank" class="btn btn-chic-primary">
+                            <i class="fas fa-location-arrow"></i> فتح الاتجاهات بالخريطة
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Embedded Map Frame -->
+                <div class="map-wrapper-chic scroll-reveal">
+                    <iframe 
+                        src="https://maps.google.com/maps?q=31.230694,29.943889&z=17&output=embed" 
+                        width="100%" 
+                        height="320" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Elegant Closing Invitation Section -->
+        <section class="closing-section" id="closing">
+            <div class="container">
+                <div class="closing-box-chic scroll-reveal">
+                    <div class="closing-ornament">
+                        <svg viewBox="0 0 200 40" width="180" height="36" fill="none">
+                            <defs>
+                                <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#AA7C11" />
+                                    <stop offset="30%" stop-color="#F3E5AB" />
+                                    <stop offset="50%" stop-color="#D4AF37" />
+                                    <stop offset="85%" stop-color="#F9E7BA" />
+                                    <stop offset="100%" stop-color="#AA7C11" />
+                                </linearGradient>
+                            </defs>
+                            <path d="M10,20 Q50,0 90,20 T100,20" stroke="url(#goldGradient)" stroke-width="1.5" />
+                            <path d="M190,20 Q150,0 110,20 T100,20" stroke="url(#goldGradient)" stroke-width="1.5" />
+                            <circle cx="100" cy="20" r="4" fill="url(#goldGradient)" />
+                            <path d="M100,13 C97,8 91,8 91,13 C91,18 100,23 100,23 C100,23 109,18 109,13 C109,8 103,8 100,13 Z" fill="url(#goldGradient)" />
+                        </svg>
+                    </div>
+                    <h2 class="closing-title-chic">فرحةٌ تُزهر بِحضوركم</h2>
+                    
+                    <div class="closing-text-container">
+                        <span class="quote-mark-top">“</span>
+                        <p class="closing-text-chic">
+                            لأن فرحة العمر تبدأ بخطوة، ولأن لحظات السعادة تُصبح أبقى حين نتقاسمها مع من نُحب..
+                            <br>
+                            ندعوكم بكل الودّ والسرور لتكونوا شهوداً على حفل خطوبتنا، ونرسم معاً لوحةً من الفرح لا يمحوها الزمن.
+                            <br>
+                            فحضوركم هو الضياء الذي يُنير ليلتنا، ودعاؤكم الصادق هو التاج الذي نزيّن به مستهلّ رحلتنا.
+                        </p>
+                        <span class="quote-mark-bottom">”</span>
+                    </div>
+                    
+                    <div class="closing-separator-heart">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    
+                    <div class="closing-signature">
+                        <span class="script-font-decor-small">Ahmed & Yasmin</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="wedding-footer-chic">
+            <div class="container">
+                <p class="footer-names-chic">Ahmed & Yasmin</p>
+                <p class="footer-text-chic">شاركونا الفرحة والدعاء بالتوفيق والبركة</p>
+                <div class="social-share">
+                    <button class="btn btn-chic-outline" id="btn-share" aria-label="مشاركة الدعوة">
+                        <i class="fas fa-share-alt"></i> مشاركة رابط الدعوة
+                    </button>
+                </div>
+                <p class="copyright">&copy; 2026 جميع الحقوق محفوظة. صُنع بكل حب لـ أحمد وياسمين.</p>
+            </div>
+        </footer>
+    </main>
+
+    <!-- JS Script -->
+    <script src="app.js"></script>
+</body>
+</html>
