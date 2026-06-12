@@ -158,7 +158,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     shareBtn.addEventListener('click', async () => {
         const shareData = {
-            title: 'دعوة خطوبة أحمد وياسمين 💍',
+            title: 'دعوة خطوبة محمد وإسراء 💍',
             text: 'نتشرف بدعوتكم لحضور حفل خطوبتنا ومشاركتنا فرحة العمر. تفاصيل الحفل وتأكيد الحضور عبر الرابط:',
             url: window.location.href
         };
